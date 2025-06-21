@@ -8,11 +8,12 @@ from typing import List, Dict, Any
 
 class TranscriptionProcessor:
     def __init__(self):
-        pass
+        self.last_processed_text = ""  # Track the last text that triggered the function
     
     def check_for_phrase_and_trigger_openai(self, text: str) -> None:
         """
         Check if the text contains the phrase "I like your" and trigger openai function if found.
+        Only triggers once per unique text to avoid multiple calls.
         
         Args:
             text: The text to check for the phrase
@@ -25,12 +26,17 @@ class TranscriptionProcessor:
         phrase_lower = "i like your"
         
         if phrase_lower in text_lower:
-            print(f"\n🎯 Phrase 'I like your' detected in: '{text}'")
-            print("Calling openai function...")
-            try:
-                openai.hello_world()  # Assuming this is the function in openai.py
-            except Exception as e:
-                print(f"Error calling openai function: {e}")
+            # Only trigger if this is a new text (not the same as last processed)
+            if text != self.last_processed_text:
+                print(f"\n🎯 Phrase 'I like your' detected in: '{text}'")
+                print("Calling openai function...")
+                try:
+                    openai.hello_world()  # Assuming this is the function in openai.py
+                    self.last_processed_text = text  # Mark this text as processed
+                except Exception as e:
+                    print(f"Error calling openai function: {e}")
+            else:
+                print(f"   ⏭️  Skipping duplicate text: '{text}'")
         else:
             print(f"   ❌ Phrase not found in: '{text}'")
     
