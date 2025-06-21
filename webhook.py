@@ -231,11 +231,13 @@ def initialize_new_conversation():
     print(f"Created new processed_transcription.json for conversation #{conversation_number}")
     return conversation_number
 
-# Initialize new conversation
-conversation_number = initialize_new_conversation()
+
 
 # Scan existing segments for the phrase "I like your"
 processor.scan_all_segments_for_phrase()
+
+# Initialize new conversation
+conversation_number = initialize_new_conversation()
 
 print("Starting webhook listener... (Press Ctrl+C to stop)")
 print("Checking for new requests every second...")

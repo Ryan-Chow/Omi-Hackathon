@@ -1,0 +1,397 @@
+[
+  {
+    "speaker": "SPEAKER_6",
+    "text": "I like basketball so much",
+    "timestamp": "00:31:17"
+  },
+  {
+    "speaker": "SPEAKER_2",
+    "text": "Yeah.",
+    "timestamp": "00:07:16"
+  },
+  {
+    "speaker": "SPEAKER_0",
+    "text": "I",
+    "timestamp": "00:07:53"
+  },
+  {
+    "speaker": "SPEAKER_3",
+    "text": "got the prompt working.",
+    "timestamp": "00:08:22"
+  },
+  {
+    "speaker": "SPEAKER_3",
+    "text": "I don't have the sound yet.",
+    "timestamp": "00:07:58"
+  },
+  {
+    "speaker": "SPEAKER_4",
+    "text": "I'll do the sound.",
+    "timestamp": "00:07:59"
+  },
+  {
+    "speaker": "SPEAKER_2",
+    "text": "Okay.",
+    "timestamp": "00:08:02"
+  },
+  {
+    "speaker": "SPEAKER_0",
+    "text": "I found them with both",
+    "timestamp": "00:08:04"
+  },
+  {
+    "speaker": "SPEAKER_3",
+    "text": "You're gonna have to figure out how to do the opening. It should be",
+    "timestamp": "00:08:06"
+  },
+  {
+    "speaker": "SPEAKER_3",
+    "text": "OpenAI dot p y.",
+    "timestamp": "00:08:08"
+  },
+  {
+    "speaker": "SPEAKER_3",
+    "text": "It's",
+    "timestamp": "00:08:11"
+  },
+  {
+    "speaker": "SPEAKER_4",
+    "text": "the Can you include your",
+    "timestamp": "00:08:40"
+  },
+  {
+    "speaker": "SPEAKER_3",
+    "text": "d Response.",
+    "timestamp": "00:08:41"
+  },
+  {
+    "speaker": "SPEAKER_1",
+    "text": "Include your key?",
+    "timestamp": "00:08:14"
+  },
+  {
+    "speaker": "SPEAKER_0",
+    "text": "I need your opening up.",
+    "timestamp": "00:08:15"
+  },
+  {
+    "speaker": "SPEAKER_3",
+    "text": "It's it's in that.",
+    "timestamp": "00:08:17"
+  },
+  {
+    "speaker": "SPEAKER_3",
+    "text": "Oh, shoot. Fail to",
+    "timestamp": "00:08:19"
+  },
+  {
+    "speaker": "SPEAKER_1",
+    "text": "push.",
+    "timestamp": "00:08:49"
+  },
+  {
+    "speaker": "SPEAKER_4",
+    "text": "Yeah.",
+    "timestamp": "00:08:22"
+  },
+  {
+    "speaker": "SPEAKER_2",
+    "text": "Let me just",
+    "timestamp": "00:08:51"
+  },
+  {
+    "speaker": "SPEAKER_4",
+    "text": "change",
+    "timestamp": "00:08:23"
+  },
+  {
+    "speaker": "SPEAKER_4",
+    "text": "me do it.",
+    "timestamp": "00:08:25"
+  },
+  {
+    "speaker": "SPEAKER_1",
+    "text": "There's a built in Python 1 where",
+    "timestamp": "00:08:35"
+  },
+  {
+    "speaker": "SPEAKER_1",
+    "text": "said there's 12 square 0.",
+    "timestamp": "00:08:46"
+  },
+  {
+    "speaker": "SPEAKER_2",
+    "text": "Think",
+    "timestamp": "00:08:49"
+  },
+  {
+    "speaker": "SPEAKER_2",
+    "text": "broke something.",
+    "timestamp": "00:08:50"
+  },
+  {
+    "speaker": "SPEAKER_0",
+    "text": "Who? What? I mean, guys.",
+    "timestamp": "00:08:52"
+  },
+  {
+    "speaker": "SPEAKER_1",
+    "text": "The guys are from you guys.",
+    "timestamp": "00:08:55"
+  },
+  {
+    "speaker": "SPEAKER_4",
+    "text": "Guys Crustle",
+    "timestamp": "00:08:58"
+  },
+  {
+    "speaker": "SPEAKER_1",
+    "text": "Are you, like, an individual photographer, or do like",
+    "timestamp": "00:09:07"
+  },
+  {
+    "speaker": "SPEAKER_4",
+    "text": "a movie?",
+    "timestamp": "00:09:10"
+  },
+  {
+    "speaker": "SPEAKER_4",
+    "text": "Oh,",
+    "timestamp": "00:09:12"
+  },
+  {
+    "speaker": "SPEAKER_1",
+    "text": "a Or a",
+    "timestamp": "00:09:40"
+  },
+  {
+    "speaker": "SPEAKER_2",
+    "text": "Stanford?",
+    "timestamp": "00:09:41"
+  },
+  {
+    "speaker": "SPEAKER_2",
+    "text": "like, a sidepacks. Where do",
+    "timestamp": "00:09:18"
+  },
+  {
+    "speaker": "SPEAKER_1",
+    "text": "where do like, close your photos?",
+    "timestamp": "00:09:48"
+  },
+  {
+    "speaker": "SPEAKER_1",
+    "text": "Instagram?",
+    "timestamp": "00:09:21"
+  },
+  {
+    "speaker": "SPEAKER_6",
+    "text": "Actually, not so much. I'm mostly doing contract",
+    "timestamp": "00:09:22"
+  },
+  {
+    "speaker": "SPEAKER_2",
+    "text": "length.",
+    "timestamp": "00:09:53"
+  },
+  {
+    "speaker": "SPEAKER_3",
+    "text": "Like, dude, I can't",
+    "timestamp": "00:09:53"
+  },
+  {
+    "speaker": "SPEAKER_2",
+    "text": "post",
+    "timestamp": "00:09:54"
+  },
+  {
+    "speaker": "SPEAKER_3",
+    "text": "I give me 1",
+    "timestamp": "00:09:27"
+  },
+  {
+    "speaker": "SPEAKER_6",
+    "text": "sec. And then On Instagram, you see some nature of",
+    "timestamp": "00:09:56"
+  },
+  {
+    "speaker": "SPEAKER_6",
+    "text": "It's just a",
+    "timestamp": "00:09:45"
+  },
+  {
+    "speaker": "SPEAKER_0",
+    "text": "That's cool.",
+    "timestamp": "00:09:46"
+  },
+  {
+    "speaker": "SPEAKER_2",
+    "text": "I'm a friend.",
+    "timestamp": "00:09:51"
+  },
+  {
+    "speaker": "SPEAKER_1",
+    "text": "I actually did",
+    "timestamp": "00:09:53"
+  },
+  {
+    "speaker": "SPEAKER_1",
+    "text": "photo, like, as a class last year.",
+    "timestamp": "00:09:54"
+  },
+  {
+    "speaker": "SPEAKER_1",
+    "text": "was just kind of like a hobby thing.",
+    "timestamp": "00:10:01"
+  },
+  {
+    "speaker": "SPEAKER_1",
+    "text": "I didn't really pursue it down there this year.",
+    "timestamp": "00:10:04"
+  },
+  {
+    "speaker": "SPEAKER_1",
+    "text": "Kinda busy.",
+    "timestamp": "00:10:07"
+  },
+  {
+    "speaker": "SPEAKER_1",
+    "text": "Everything",
+    "timestamp": "00:10:07"
+  },
+  {
+    "speaker": "SPEAKER_4",
+    "text": "at",
+    "timestamp": "00:10:36"
+  },
+  {
+    "speaker": "SPEAKER_6",
+    "text": "home. I see.",
+    "timestamp": "00:10:36"
+  },
+  {
+    "speaker": "SPEAKER_1",
+    "text": "Also, I don't have enough money for a camera. So",
+    "timestamp": "00:10:11"
+  },
+  {
+    "speaker": "SPEAKER_1",
+    "text": "mean, maybe I was using, like, the school camera.",
+    "timestamp": "00:10:15"
+  },
+  {
+    "speaker": "SPEAKER_6",
+    "text": "I see. Yeah. And",
+    "timestamp": "00:10:45"
+  },
+  {
+    "speaker": "SPEAKER_6",
+    "text": "twist a bit.",
+    "timestamp": "00:10:25"
+  },
+  {
+    "speaker": "SPEAKER_3",
+    "text": "Dude, I can't commit because",
+    "timestamp": "00:10:33"
+  },
+  {
+    "speaker": "SPEAKER_3",
+    "text": "it says there's a secret key in my",
+    "timestamp": "00:10:39"
+  },
+  {
+    "speaker": "SPEAKER_3",
+    "text": "There's no secret key.",
+    "timestamp": "00:10:43"
+  },
+  {
+    "speaker": "SPEAKER_3",
+    "text": "How do I get rid of this?",
+    "timestamp": "00:10:48"
+  },
+  {
+    "speaker": "SPEAKER_1",
+    "text": "Let's get a professional Refresh",
+    "timestamp": "00:10:51"
+  },
+  {
+    "speaker": "SPEAKER_6",
+    "text": "it. Oh, yeah. Yeah. Some coloring.",
+    "timestamp": "00:11:20"
+  },
+  {
+    "speaker": "SPEAKER_4",
+    "text": "Right?",
+    "timestamp": "00:10:53"
+  },
+  {
+    "speaker": "SPEAKER_3",
+    "text": "I already, like, committed I didn't",
+    "timestamp": "00:10:57"
+  },
+  {
+    "speaker": "SPEAKER_3",
+    "text": "know if it.",
+    "timestamp": "00:10:59"
+  },
+  {
+    "speaker": "SPEAKER_1",
+    "text": "What does that do that? It gets mad",
+    "timestamp": "00:11:03"
+  },
+  {
+    "speaker": "SPEAKER_4",
+    "text": "at you and your secret creator. Yeah. Because I included",
+    "timestamp": "00:11:34"
+  },
+  {
+    "speaker": "SPEAKER_4",
+    "text": "my",
+    "timestamp": "00:11:07"
+  },
+  {
+    "speaker": "SPEAKER_6",
+    "text": "no. I'm just",
+    "timestamp": "00:11:36"
+  },
+  {
+    "speaker": "SPEAKER_2",
+    "text": "because",
+    "timestamp": "00:11:37"
+  },
+  {
+    "speaker": "SPEAKER_6",
+    "text": "I included I don't reflect it so much, like, before I go to the",
+    "timestamp": "00:11:37"
+  },
+  {
+    "speaker": "SPEAKER_0",
+    "text": "History",
+    "timestamp": "00:11:21"
+  },
+  {
+    "speaker": "SPEAKER_6",
+    "text": "What are you guys for the, like,",
+    "timestamp": "00:11:25"
+  },
+  {
+    "speaker": "SPEAKER_2",
+    "text": "So",
+    "timestamp": "00:11:36"
+  },
+  {
+    "speaker": "SPEAKER_1",
+    "text": "then",
+    "timestamp": "00:11:40"
+  },
+  {
+    "speaker": "SPEAKER_1",
+    "text": "if, like, the conversation gets dry, you could say, like, a",
+    "timestamp": "00:11:41"
+  },
+  {
+    "speaker": "SPEAKER_1",
+    "text": "keyboard.",
+    "timestamp": "00:11:43"
+  }
+]
