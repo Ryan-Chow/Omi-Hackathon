@@ -2,12 +2,67 @@ import requests
 import json
 import time
 import os
+import openai
 from datetime import datetime
 from typing import List, Dict, Any
 
 class TranscriptionProcessor:
     def __init__(self):
         pass
+    
+    def check_for_phrase_and_trigger_openai(self, text: str) -> None:
+        """
+        Check if the text contains the phrase "I like your" and trigger openai function if found.
+        
+        Args:
+            text: The text to check for the phrase
+        """
+        # Debug: print what we're checking
+        print(f"🔍 Checking text: '{text}'")
+        
+        # Convert both to lowercase for case-insensitive comparison
+        text_lower = text.lower()
+        phrase_lower = "i like your"
+        
+        if phrase_lower in text_lower:
+            print(f"\n🎯 Phrase 'I like your' detected in: '{text}'")
+            print("Calling openai function...")
+            try:
+                openai.hello_world()  # Assuming this is the function in openai.py
+            except Exception as e:
+                print(f"Error calling openai function: {e}")
+        else:
+            print(f"   ❌ Phrase not found in: '{text}'")
+    
+    def scan_all_segments_for_phrase(self, output_file: str = 'processed_transcription.json') -> None:
+        """
+        Scan all existing segments in the processed file for the phrase "I like your".
+        
+        Args:
+            output_file: Path to the processed transcription file
+        """
+        try:
+            with open(output_file, 'r', encoding='utf-8') as f:
+                content = f.read().strip()
+                if content:
+                    segments = json.loads(content)
+                    print(f"\n🔍 Scanning {len(segments)} existing segments for 'I like your'...")
+                    
+                    for segment in segments:
+                        text = segment.get('text', '')
+                        if "i like your" in text.lower():
+                            print(f"🎯 Found phrase in existing segment: '{text}'")
+                            print("Calling openai function...")
+                            try:
+                                openai.hello_world()
+                            except Exception as e:
+                                print(f"Error calling openai function: {e}")
+                else:
+                    print("No existing segments to scan")
+        except FileNotFoundError:
+            print("No processed file found to scan")
+        except Exception as e:
+            print(f"Error scanning segments: {e}")
     
     def parse_webhook_data(self, webhook_data: Dict[str, Any]) -> List[Dict[str, str]]:
         """
@@ -173,6 +228,9 @@ def initialize_new_conversation():
 # Initialize new conversation
 conversation_number = initialize_new_conversation()
 
+# Scan existing segments for the phrase "I like your"
+processor.scan_all_segments_for_phrase()
+
 print("Starting webhook listener... (Press Ctrl+C to stop)")
 print("Checking for new requests every second...")
 
@@ -185,6 +243,10 @@ try:
             if response.status_code == 200:
                 # Process the new data first (always process new webhook data)
                 new_segments = processor.parse_webhook_data(data)
+                
+                # Check for phrase in ALL segments (not just unique ones)
+                for segment in new_segments:
+                    processor.check_for_phrase_and_trigger_openai(segment['text'])
                 
                 # Print the processed transcription segments
                 if new_segments:
