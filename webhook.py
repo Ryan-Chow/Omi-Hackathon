@@ -1,6 +1,7 @@
 import requests
 import json
 import time
+import os
 from datetime import datetime
 from typing import List, Dict, Any
 
@@ -21,12 +22,18 @@ class TranscriptionProcessor:
         processed_segments = []
         
         # Extract the content from the webhook data
-        if isinstance(webhook_data.get('content'), str):
-            # Parse the JSON string in the content field
-            content_data = json.loads(webhook_data['content'])
+        content = webhook_data.get('content')
+        
+        if isinstance(content, str):
+            try:
+                # Parse the JSON string in the content field
+                content_data = json.loads(content)
+            except json.JSONDecodeError as e:
+                print(f"Failed to parse content as JSON: {e}")
+                return processed_segments
         else:
             # If content is already a dict
-            content_data = webhook_data.get('content', {})
+            content_data = content or {}
         
         # Get segments from the content
         segments = content_data.get('segments', [])
@@ -69,24 +76,49 @@ class TranscriptionProcessor:
         """
         try:
             # Try to read existing data
+            existing_data = []
             try:
                 with open(output_file, 'r', encoding='utf-8') as f:
-                    existing_data = json.load(f)
+                    content = f.read().strip()
+                    if content:  # Only try to parse if file is not empty
+                        existing_data = json.loads(content)
+                    else:
+                        existing_data = []
             except FileNotFoundError:
+                existing_data = []
+            except json.JSONDecodeError as e:
+                print(f"Error reading existing file, starting fresh: {e}")
                 existing_data = []
             
             # Process new webhook data
             new_segments = self.parse_webhook_data(webhook_data)
             
-            # Append new segments (only if there are any)
-            if new_segments:
-                existing_data.extend(new_segments)
+            # Create a set of existing segment identifiers for deduplication
+            existing_segment_ids = set()
+            for segment in existing_data:
+                # Create a unique identifier for each segment
+                segment_id = f"{segment['speaker']}_{segment['text']}_{segment['timestamp']}"
+                existing_segment_ids.add(segment_id)
+            
+            # Filter out duplicates from new segments
+            unique_new_segments = []
+            for segment in new_segments:
+                segment_id = f"{segment['speaker']}_{segment['text']}_{segment['timestamp']}"
+                if segment_id not in existing_segment_ids:
+                    unique_new_segments.append(segment)
+                    existing_segment_ids.add(segment_id)
+            
+            # Append unique new segments (only if there are any)
+            if unique_new_segments:
+                existing_data.extend(unique_new_segments)
                 
                 # Write back to file
                 with open(output_file, 'w', encoding='utf-8') as f:
                     json.dump(existing_data, f, indent=2, ensure_ascii=False)
                 
-                print(f"Added {len(new_segments)} new segments to {output_file}")
+                print(f"Added {len(unique_new_segments)} new unique segments to {output_file}")
+            else:
+                print("No new unique segments to add")
             
         except Exception as e:
             print(f"Error appending to processed file: {e}")
@@ -103,10 +135,46 @@ headers = {
     "Api-Key": api_key
 }
 
-print("Starting webhook listener with live transcription processing...")
-print("Raw data saved to: live_transcript.json")
-print("Processed data saved to: processed_transcription.json")
-print("Press Ctrl+C to stop")
+def initialize_new_conversation():
+    """Initialize a new conversation by clearing live_transcript.json and archiving processed_transcription.json"""
+    
+    # Create previous_conversations directory if it doesn't exist
+    os.makedirs('previous_conversations', exist_ok=True)
+    
+    # Find the next conversation number
+    conversation_number = 1
+    while os.path.exists(f'previous_conversations/convo_{conversation_number}.json'):
+        conversation_number += 1
+    
+    # Clear live_transcript.json
+    if os.path.exists('live_transcript.json'):
+        os.remove('live_transcript.json')
+        print(f"Cleared live_transcript.json")
+    
+    # Archive existing processed_transcription.json if it exists
+    if os.path.exists('processed_transcription.json'):
+        # Check if the file has content (not empty)
+        if os.path.getsize('processed_transcription.json') > 0:
+            archive_path = f'previous_conversations/convo_{conversation_number}.json'
+            os.rename('processed_transcription.json', archive_path)
+            print(f"Archived previous conversation to {archive_path}")
+        else:
+            # If file is empty, just remove it
+            os.remove('processed_transcription.json')
+            print("Removed empty processed_transcription.json")
+    
+    # Create new empty processed_transcription.json
+    with open('processed_transcription.json', 'w') as f:
+        json.dump([], f)
+    
+    print(f"Created new processed_transcription.json for conversation #{conversation_number}")
+    return conversation_number
+
+# Initialize new conversation
+conversation_number = initialize_new_conversation()
+
+print("Starting webhook listener... (Press Ctrl+C to stop)")
+print("Checking for new requests every second...")
 
 try:
     while True:
@@ -117,6 +185,9 @@ try:
             if response.status_code == 200:
                 # Print to console (optional)
                 print(json.dumps(data, indent=4))
+                
+                # Process the new data first (always process new webhook data)
+                processor.append_to_processed_file(data)
                 
                 # Load existing data or create empty list
                 try:
@@ -139,9 +210,6 @@ try:
                         json.dump(existing_data, f, indent=4)
                     
                     print("\nNew data appended to live_transcript.json")
-                    
-                    # Process the new data
-                    processor.append_to_processed_file(data)
                 else:
                     print("\nData already exists in live_transcript.json - not appending")
             else:

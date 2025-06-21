@@ -1,0 +1,482 @@
+[
+  {
+    "speaker": "SPEAKER_1",
+    "text": "Yeah. I'm gonna be out of pro, but",
+    "timestamp": "00:18:15"
+  },
+  {
+    "speaker": "SPEAKER_1",
+    "text": "Yeah. I'm gonna be out of pro, but",
+    "timestamp": "00:18:15"
+  },
+  {
+    "speaker": "SPEAKER_1",
+    "text": "Yeah. I'm gonna be out of pro, but",
+    "timestamp": "00:18:15"
+  },
+  {
+    "speaker": "SPEAKER_1",
+    "text": "Yeah. I'm gonna be out of pro, but",
+    "timestamp": "00:18:15"
+  },
+  {
+    "speaker": "SPEAKER_1",
+    "text": "Yeah. I'm gonna be out of pro, but",
+    "timestamp": "00:18:15"
+  },
+  {
+    "speaker": "SPEAKER_1",
+    "text": "Yeah. I'm gonna be out of pro, but",
+    "timestamp": "00:18:15"
+  },
+  {
+    "speaker": "SPEAKER_1",
+    "text": "Yeah. I'm gonna be out of pro, but",
+    "timestamp": "00:18:15"
+  },
+  {
+    "speaker": "SPEAKER_1",
+    "text": "Yeah. I'm gonna be out of pro, but",
+    "timestamp": "00:18:15"
+  },
+  {
+    "speaker": "SPEAKER_1",
+    "text": "What's it called? OMI?",
+    "timestamp": "00:19:29"
+  },
+  {
+    "speaker": "SPEAKER_1",
+    "text": "What's it called? OMI?",
+    "timestamp": "00:19:29"
+  },
+  {
+    "speaker": "SPEAKER_1",
+    "text": "Honestly, bro, I might just do my own thing, bro.",
+    "timestamp": "00:18:24"
+  },
+  {
+    "speaker": "SPEAKER_1",
+    "text": "Honestly, bro, I might just do my own thing, bro.",
+    "timestamp": "00:18:24"
+  },
+  {
+    "speaker": "SPEAKER_1",
+    "text": "Honestly, bro, I might just do my own thing, bro.",
+    "timestamp": "00:18:24"
+  },
+  {
+    "speaker": "SPEAKER_1",
+    "text": "Honestly, bro, I might just do my own thing, bro.",
+    "timestamp": "00:18:24"
+  },
+  {
+    "speaker": "SPEAKER_1",
+    "text": "Honestly, bro, I might just do my own thing, bro.",
+    "timestamp": "00:18:24"
+  },
+  {
+    "speaker": "SPEAKER_1",
+    "text": "Honestly, bro, I might just do my own thing, bro.",
+    "timestamp": "00:18:24"
+  },
+  {
+    "speaker": "SPEAKER_1",
+    "text": "Honestly, bro, I might just do my own thing, bro.",
+    "timestamp": "00:18:24"
+  },
+  {
+    "speaker": "SPEAKER_1",
+    "text": "Honestly, bro, I might just do my own thing, bro.",
+    "timestamp": "00:18:24"
+  },
+  {
+    "speaker": "SPEAKER_1",
+    "text": "And just have it, like, darn built in darn",
+    "timestamp": "00:18:27"
+  },
+  {
+    "speaker": "SPEAKER_1",
+    "text": "And just have it, like, darn built in darn",
+    "timestamp": "00:18:27"
+  },
+  {
+    "speaker": "SPEAKER_1",
+    "text": "And just have it, like, darn built in darn",
+    "timestamp": "00:18:27"
+  },
+  {
+    "speaker": "SPEAKER_2",
+    "text": "Web",
+    "timestamp": "00:00:58"
+  },
+  {
+    "speaker": "SPEAKER_2",
+    "text": "Okay. Hopefully. Alright.",
+    "timestamp": "00:01:02"
+  },
+  {
+    "speaker": "SPEAKER_1",
+    "text": "I",
+    "timestamp": "00:01:05"
+  },
+  {
+    "speaker": "SPEAKER_1",
+    "text": "he's in he's in a meeting right now.",
+    "timestamp": "00:01:06"
+  },
+  {
+    "speaker": "SPEAKER_1",
+    "text": "Actually, no. You can come in, I think.",
+    "timestamp": "00:01:08"
+  },
+  {
+    "speaker": "SPEAKER_0",
+    "text": "Yes. Yeah. I'm I'm here right now.",
+    "timestamp": "00:01:10"
+  },
+  {
+    "speaker": "SPEAKER_1",
+    "text": "Yeah, we're using",
+    "timestamp": "00:01:14"
+  },
+  {
+    "speaker": "SPEAKER_1",
+    "text": "using the new OMIE for, like, the transfer.",
+    "timestamp": "00:01:15"
+  },
+  {
+    "speaker": "SPEAKER_3",
+    "text": "Yeah.",
+    "timestamp": "00:01:17"
+  },
+  {
+    "speaker": "SPEAKER_4",
+    "text": "What are you what",
+    "timestamp": "00:01:47"
+  },
+  {
+    "speaker": "SPEAKER_2",
+    "text": "are we trying to",
+    "timestamp": "00:01:47"
+  },
+  {
+    "speaker": "SPEAKER_0",
+    "text": "Yeah.",
+    "timestamp": "00:01:21"
+  },
+  {
+    "speaker": "SPEAKER_1",
+    "text": "Where?",
+    "timestamp": "00:01:23"
+  },
+  {
+    "speaker": "SPEAKER_4",
+    "text": "For what?",
+    "timestamp": "00:01:52"
+  },
+  {
+    "speaker": "SPEAKER_2",
+    "text": "For The glasses. Okay. Cool. So we sit a little",
+    "timestamp": "00:01:24"
+  },
+  {
+    "speaker": "SPEAKER_5",
+    "text": "video. Yeah. We did they both did it on Windows.",
+    "timestamp": "00:01:27"
+  },
+  {
+    "speaker": "SPEAKER_5",
+    "text": "You could basically, you just need to get the tools and",
+    "timestamp": "00:01:31"
+  },
+  {
+    "speaker": "SPEAKER_5",
+    "text": "Do",
+    "timestamp": "00:01:37"
+  },
+  {
+    "speaker": "SPEAKER_5",
+    "text": "crew install or PIP install, CSP tools.",
+    "timestamp": "00:01:38"
+  },
+  {
+    "speaker": "SPEAKER_5",
+    "text": "You can also install Telegram on your machine",
+    "timestamp": "00:01:45"
+  },
+  {
+    "speaker": "SPEAKER_5",
+    "text": "get the links faster.",
+    "timestamp": "00:01:47"
+  },
+  {
+    "speaker": "SPEAKER_1",
+    "text": "Well, the thing is",
+    "timestamp": "00:01:48"
+  },
+  {
+    "speaker": "SPEAKER_0",
+    "text": "I downloaded them, but",
+    "timestamp": "00:02:17"
+  },
+  {
+    "speaker": "SPEAKER_2",
+    "text": "the file structure is different.",
+    "timestamp": "00:01:51"
+  },
+  {
+    "speaker": "SPEAKER_0",
+    "text": "Or do",
+    "timestamp": "00:01:53"
+  },
+  {
+    "speaker": "SPEAKER_6",
+    "text": "we know in that",
+    "timestamp": "00:02:22"
+  },
+  {
+    "speaker": "SPEAKER_5",
+    "text": "class? Okay. Just just go to pip install or reinstall and find",
+    "timestamp": "00:02:23"
+  },
+  {
+    "speaker": "SPEAKER_5",
+    "text": "ESP install.",
+    "timestamp": "00:01:59"
+  },
+  {
+    "speaker": "SPEAKER_5",
+    "text": "EBook by",
+    "timestamp": "00:02:01"
+  },
+  {
+    "speaker": "SPEAKER_0",
+    "text": "the way.",
+    "timestamp": "00:02:30"
+  },
+  {
+    "speaker": "SPEAKER_2",
+    "text": "I think.",
+    "timestamp": "00:02:02"
+  },
+  {
+    "speaker": "SPEAKER_5",
+    "text": "Okay. Yeah. And the the the heartburn was getting",
+    "timestamp": "00:02:10"
+  },
+  {
+    "speaker": "SPEAKER_5",
+    "text": "and load the firmware.",
+    "timestamp": "00:02:17"
+  },
+  {
+    "speaker": "SPEAKER_5",
+    "text": "The Arduino CLI tool.",
+    "timestamp": "00:02:24"
+  },
+  {
+    "speaker": "SPEAKER_5",
+    "text": "That was that was the key.",
+    "timestamp": "00:02:26"
+  },
+  {
+    "speaker": "SPEAKER_5",
+    "text": "You don't need to do firmware update on the OMI",
+    "timestamp": "00:02:31"
+  },
+  {
+    "speaker": "SPEAKER_2",
+    "text": "the new OMI. Yeah. This is fine.",
+    "timestamp": "00:02:34"
+  },
+  {
+    "speaker": "SPEAKER_5",
+    "text": "Should just work out of the box. You got it working?",
+    "timestamp": "00:02:37"
+  },
+  {
+    "speaker": "SPEAKER_5",
+    "text": "Said something about it",
+    "timestamp": "00:02:42"
+  },
+  {
+    "speaker": "SPEAKER_6",
+    "text": "Omiclot.",
+    "timestamp": "00:03:11"
+  },
+  {
+    "speaker": "SPEAKER_5",
+    "text": "App? Was it",
+    "timestamp": "00:02:44"
+  },
+  {
+    "speaker": "SPEAKER_5",
+    "text": "a different app that",
+    "timestamp": "00:02:45"
+  },
+  {
+    "speaker": "SPEAKER_5",
+    "text": "you were trying?",
+    "timestamp": "00:02:46"
+  },
+  {
+    "speaker": "SPEAKER_3",
+    "text": "confused. Oh, that's cool.",
+    "timestamp": "00:02:49"
+  },
+  {
+    "speaker": "SPEAKER_2",
+    "text": "Okay. Now it",
+    "timestamp": "00:03:21"
+  },
+  {
+    "speaker": "SPEAKER_0",
+    "text": "just stopped.",
+    "timestamp": "00:03:50"
+  },
+  {
+    "speaker": "SPEAKER_3",
+    "text": "Dock?",
+    "timestamp": "00:03:27"
+  },
+  {
+    "speaker": "SPEAKER_2",
+    "text": "Okay. It's a little inconsistent, but I think",
+    "timestamp": "00:03:36"
+  },
+  {
+    "speaker": "SPEAKER_2",
+    "text": "think it should work most",
+    "timestamp": "00:03:38"
+  },
+  {
+    "speaker": "SPEAKER_3",
+    "text": "of time.",
+    "timestamp": "00:04:07"
+  },
+  {
+    "speaker": "SPEAKER_2",
+    "text": "Time.",
+    "timestamp": "00:03:40"
+  },
+  {
+    "speaker": "SPEAKER_1",
+    "text": "Yeah.",
+    "timestamp": "00:03:44"
+  },
+  {
+    "speaker": "SPEAKER_2",
+    "text": "Let's just go.",
+    "timestamp": "00:03:45"
+  },
+  {
+    "speaker": "SPEAKER_0",
+    "text": "Next step.",
+    "timestamp": "00:03:49"
+  },
+  {
+    "speaker": "SPEAKER_5",
+    "text": "Free to come in there if you need help. I don't wanna",
+    "timestamp": "00:02:52"
+  },
+  {
+    "speaker": "SPEAKER_0",
+    "text": "Okay.",
+    "timestamp": "00:02:54"
+  },
+  {
+    "speaker": "SPEAKER_0",
+    "text": "Oh, yeah. Thank you.",
+    "timestamp": "00:02:56"
+  },
+  {
+    "speaker": "SPEAKER_0",
+    "text": "Analyze.",
+    "timestamp": "00:03:50"
+  },
+  {
+    "speaker": "SPEAKER_3",
+    "text": "What did he say?",
+    "timestamp": "00:04:05"
+  },
+  {
+    "speaker": "SPEAKER_2",
+    "text": "What? Oh, he he he was just, like, trying to offer some help.",
+    "timestamp": "00:04:08"
+  },
+  {
+    "speaker": "SPEAKER_1",
+    "text": "If we needed.",
+    "timestamp": "00:04:11"
+  },
+  {
+    "speaker": "SPEAKER_0",
+    "text": "Yeah. He",
+    "timestamp": "00:04:40"
+  },
+  {
+    "speaker": "SPEAKER_6",
+    "text": "was checking on",
+    "timestamp": "00:04:40"
+  },
+  {
+    "speaker": "SPEAKER_0",
+    "text": "this.",
+    "timestamp": "00:04:41"
+  },
+  {
+    "speaker": "SPEAKER_1",
+    "text": "Yeah.",
+    "timestamp": "00:04:41"
+  },
+  {
+    "speaker": "SPEAKER_1",
+    "text": "Like, I can",
+    "timestamp": "00:04:22"
+  },
+  {
+    "speaker": "SPEAKER_2",
+    "text": "I can see it all on the JSON?",
+    "timestamp": "00:04:24"
+  },
+  {
+    "speaker": "SPEAKER_2",
+    "text": "parsed and everything.",
+    "timestamp": "00:04:28"
+  },
+  {
+    "speaker": "SPEAKER_3",
+    "text": "Which is wonderful.",
+    "timestamp": "00:04:30"
+  },
+  {
+    "speaker": "SPEAKER_2",
+    "text": "Right?",
+    "timestamp": "00:04:31"
+  },
+  {
+    "speaker": "SPEAKER_2",
+    "text": "But it's a little inconsistent.",
+    "timestamp": "00:04:36"
+  },
+  {
+    "speaker": "SPEAKER_1",
+    "text": "Please hold",
+    "timestamp": "00:04:50"
+  },
+  {
+    "speaker": "SPEAKER_2",
+    "text": "Do something.",
+    "timestamp": "00:04:56"
+  },
+  {
+    "speaker": "SPEAKER_3",
+    "text": "Also, something to have, like, small",
+    "timestamp": "00:04:57"
+  },
+  {
+    "speaker": "SPEAKER_6",
+    "text": "groups.",
+    "timestamp": "00:05:27"
+  }
+]
