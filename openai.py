@@ -4,7 +4,7 @@ import os
 import pyttsx3
 
 # Set the API key - better to use environment variable
-openai_api_key = "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"
+openai_api_key = ""
 engine = pyttsx3.init()
 
 
