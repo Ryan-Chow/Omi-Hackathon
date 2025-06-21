@@ -1,9 +1,12 @@
 import requests
 import json
 import os
+import pyttsx3
 
 # Set the API key - better to use environment variable
 openai_api_key = "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"
+engine = pyttsx3.init()
+
 
 def hello_world():
     """Function that gets called when 'I like your' phrase is detected"""
@@ -58,6 +61,8 @@ def hello_world():
             result = response.json()
             question = result['choices'][0]['message']['content']
             print(f"🤖 AI Response: {question}")
+            engine.say(question)
+            engine.runAndWait()
             return question
         else:
             print(f"Error calling OpenAI API: {response.status_code} - {response.text}")
