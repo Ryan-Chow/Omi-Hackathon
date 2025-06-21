@@ -72,4 +72,3 @@ def hello_world():
         print(f"Error calling OpenAI API: {e}")
         return None
 
-hello_world()
