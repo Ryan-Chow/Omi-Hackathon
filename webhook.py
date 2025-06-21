@@ -183,10 +183,16 @@ try:
             data = response.json()
 
             if response.status_code == 200:
-                # Print to console (optional)
-                print(json.dumps(data, indent=4))
-                
                 # Process the new data first (always process new webhook data)
+                new_segments = processor.parse_webhook_data(data)
+                
+                # Print the processed transcription segments
+                if new_segments:
+                    print(f"\n=== New Transcription Segments ===")
+                    for segment in new_segments:
+                        print(f"[{segment['timestamp']}] {segment['speaker']}: {segment['text']}")
+                    print("=" * 40)
+                
                 processor.append_to_processed_file(data)
                 
                 # Load existing data or create empty list
