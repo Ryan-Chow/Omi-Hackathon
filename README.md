@@ -2,15 +2,15 @@
 
 > **Made by 3 high schoolers — Blake Almon, Cody Luu, and Ryan Chow — during the "Most Controversial App" Hackathon hosted by Omi at Stanford University. This was a winning project!**
 
-The webhook receives live data from a custom-built Omi app using Omi's listening necklaces.
+
 
 A Python project for processing, analyzing, and interacting with live transcriptions from OMI webhooks, with OpenAI-powered question generation and text-to-speech features.
 
 ## Features
 
-- **Live Webhook Listener**: Continuously fetches and processes new transcription data from a webhook endpoint.
+- **Live Webhook Listener**: Continuously fetches and processes new transcription data from a webhook endpoint. The webhook receives live data from a custom-built Omi app using Omi's listening necklaces which deliver json formatted to the webhook.
 - **Phrase Detection**: Detects the phrase "I like your" in any segment and triggers an OpenAI-powered function.
-- **OpenAI Integration**: Generates a unique, well-crafted question about the conversation using GPT-3.5-turbo and reads it aloud using text-to-speech.
+- **OpenAI Integration**: Generates a unique, well-crafted question about the conversation using GPT-3.5-turbo and reads it aloud using an open source text-to-speech library.
 - **Transcription Management**: Deduplicates, archives, and appends new transcription segments.
 - **Utilities**: Includes scripts for cleaning up duplicates, testing parsing, and standalone text-to-speech.
 
